@@ -1,0 +1,15 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Thu Jan 16 18:22:52 2020
+| Host         : eric-VivoBook-ASUSLaptop-X412FL-X412FL running 64-bit Ubuntu 19.10
+| Command      : report_bus_skew -warn_on_violation -file led_blink_bus_skew_routed.rpt -pb led_blink_bus_skew_routed.pb -rpx led_blink_bus_skew_routed.rpx
+| Design       : led_blink
+| Device       : 7a35t-fgg484
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

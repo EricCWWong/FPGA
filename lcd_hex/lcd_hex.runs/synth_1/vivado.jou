@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Sun Jan 19 21:58:05 2020
+# Process ID: 25278
+# Current directory: /home/eric/lcd_hex/lcd_hex.runs/synth_1
+# Command line: vivado -log lcd_hex.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lcd_hex.tcl
+# Log file: /home/eric/lcd_hex/lcd_hex.runs/synth_1/lcd_hex.vds
+# Journal file: /home/eric/lcd_hex/lcd_hex.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source lcd_hex.tcl -notrace

@@ -1,0 +1,104 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
+| Date         : Fri Jan 17 23:25:46 2020
+| Host         : eric-VivoBook-ASUSLaptop-X412FL-X412FL running 64-bit Ubuntu 19.10
+| Command      : report_control_sets -verbose -file lcd_control_sets_placed.rpt
+| Design       : lcd
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    26 |
+|    Minimum number of control sets                        |    26 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   169 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    26 |
+| >= 0 to < 4        |    22 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |              58 |           22 |
+| No           | Yes                   | No                     |               7 |            7 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              37 |           18 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+---------------+----------------------------+------------------+----------------+
+|         Clock Signal        | Enable Signal |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++-----------------------------+---------------+----------------------------+------------------+----------------+
+|  sys_clk_i_IBUF_BUFG        | sel_o0        | digit_o_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  digit_o_reg[4]_LDC_i_1_n_0 |               | digit_o_reg[4]_LDC_i_2_n_0 |                1 |              1 |
+|  digit_o_reg[6]_LDC_i_1_n_0 |               | digit_o_reg[6]_LDC_i_2_n_0 |                1 |              1 |
+|  digit_o_reg[5]_LDC_i_1_n_0 |               | digit_o_reg[5]_LDC_i_2_n_0 |                1 |              1 |
+|  digit_o_reg[3]_LDC_i_1_n_0 |               | digit_o_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  digit_o_reg[0]_LDC_i_1_n_0 |               | digit_o_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  digit_o_reg[1]_LDC_i_1_n_0 |               | digit_o_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        | sel_o0        | digit_o_reg[4]_LDC_i_1_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        | sel_o0        | digit_o_reg[6]_LDC_i_1_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        | sel_o0        | digit_o_reg[5]_LDC_i_1_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        | sel_o0        | digit_o_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        | sel_o0        | digit_o_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  digit_o_reg[2]_LDC_i_1_n_0 |               | digit_o_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        | sel_o0        | digit_o_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        |               | digit_o_reg[5]_LDC_i_2_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        |               | digit_o_reg[4]_LDC_i_2_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        |               | digit_o_reg[6]_LDC_i_2_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        |               | digit_o_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        |               | digit_o_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        |               | digit_o_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        |               | digit_o_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        |               |                            |                1 |              1 |
+|  sys_clk_i_IBUF_BUFG        | num_s         | clear                      |                3 |              4 |
+|  sys_clk_i_IBUF_BUFG        | sel_o0        | clear                      |                3 |              6 |
+|  sys_clk_i_IBUF_BUFG        | cnt_s         | clear                      |                5 |             20 |
+|  sys_clk_i_IBUF_BUFG        |               | clear                      |               15 |             51 |
++-----------------------------+---------------+----------------------------+------------------+----------------+
+
+
