@@ -17,19 +17,19 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tfgg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/eric/led_blink/led_blink.cache/wt [current_project]
-set_property parent.project_path /home/eric/led_blink/led_blink.xpr [current_project]
+set_property webtalk.parent_dir /mnt/Data2/FPGA/FPGA/led_blink/led_blink.cache/wt [current_project]
+set_property parent.project_path /mnt/Data2/FPGA/FPGA/led_blink/led_blink.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo /home/eric/led_blink/led_blink.cache/ip [current_project]
+set_property ip_output_repo /mnt/Data2/FPGA/FPGA/led_blink/led_blink.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib /home/eric/led_blink/led_blink.srcs/sources_1/new/led_blink.vhd
+read_vhdl -library xil_defaultlib /mnt/Data2/FPGA/FPGA/led_blink/led_blink.srcs/sources_1/new/led_blink.vhd
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -38,8 +38,8 @@ read_vhdl -library xil_defaultlib /home/eric/led_blink/led_blink.srcs/sources_1/
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/eric/led_blink/led_blink.srcs/constrs_1/new/constraints.xdc
-set_property used_in_implementation false [get_files /home/eric/led_blink/led_blink.srcs/constrs_1/new/constraints.xdc]
+read_xdc /mnt/Data2/FPGA/FPGA/led_blink/led_blink.srcs/constrs_1/new/constraints.xdc
+set_property used_in_implementation false [get_files /mnt/Data2/FPGA/FPGA/led_blink/led_blink.srcs/constrs_1/new/constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

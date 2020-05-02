@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2019.2.1 (64-bit)              -->
+<!-- Product Version: Vivado v2019.2 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="/home/eric/lcd_num/lcd_num.xpr">
+<Project Version="7" Minor="44" Path="/mnt/Data2/FPGA/FPGA/lcd_num/lcd_num.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="62b58dd36e6047068cadc5df93b42071"/>
@@ -61,6 +61,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PPRDIR/../Desktop/FPGA/lcd.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -87,8 +88,6 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="lcd"/>
-        <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>

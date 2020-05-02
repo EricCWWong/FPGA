@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.2.1 (lin64) Build 2729669 Thu Dec  5 04:48:12 MST 2019
-| Date         : Thu Jan 16 18:21:43 2020
-| Host         : eric-VivoBook-ASUSLaptop-X412FL-X412FL running 64-bit Ubuntu 19.10
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed Apr 29 11:38:33 2020
+| Host         : eric-n551jx running 64-bit Manjaro Linux
 | Command      : report_utilization -file led_blink_utilization_synth.rpt -pb led_blink_utilization_synth.pb
 | Design       : led_blink
 | Device       : 7a35tfgg484-1
