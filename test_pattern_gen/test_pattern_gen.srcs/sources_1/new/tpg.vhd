@@ -40,7 +40,7 @@ architecture rtl of tpg is
 
     constant width_c : natural := 1920;
     constant height_c : natural := 1080;
-    constant square_c : natural := 180;
+    constant square_c : natural := 40;
 
 
     signal width_s : natural range 0 to width_c;
@@ -72,15 +72,14 @@ begin
                 end if;
             end if;
             
+            tlast_o <= '0';
+            tuser_o <= '0';
             if width_s = 0 then
                 if height_s = 0 then
                     tuser_o <= '1';
                 end if;
             elsif width_s = width_c - 1 then
                 tlast_o <= '1';
-            else
-                tuser_o <= '0';
-                tlast_o <= '0';
             end if;
             tvalid_o <= '1';
             

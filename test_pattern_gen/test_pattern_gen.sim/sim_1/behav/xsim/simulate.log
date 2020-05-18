@@ -1,0 +1,5 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Failure: End of simulation
+Time: 414748300 ns  Iteration: 0  Process: /tpg_tb/p_test  File: /home/eric/Desktop/FPGA/test_pattern_gen/test_pattern_gen.srcs/sim_1/new/tpg_tb.vhd
+$finish called at time : 414748300 ns : File "/home/eric/Desktop/FPGA/test_pattern_gen/test_pattern_gen.srcs/sim_1/new/tpg_tb.vhd" Line 100

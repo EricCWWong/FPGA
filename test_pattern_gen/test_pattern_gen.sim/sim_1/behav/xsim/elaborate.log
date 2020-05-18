@@ -1,6 +1,6 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: /mnt/Data1/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto b99bdc1c0fac4517be70b2f6bf40135d --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tpg_tb_behav xil_defaultlib.tpg_tb -log elaborate.log 
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto b99bdc1c0fac4517be70b2f6bf40135d --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tpg_tb_behav xil_defaultlib.tpg_tb -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -13,5 +13,4 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling architecture rtl of entity xil_defaultlib.tpg [tpg_default]
 Compiling architecture behavioral of entity xil_defaultlib.tpg_tb
-ERROR: [XSIM 43-3409] Failed to compile generated C file xsim.dir/tpg_tb_behav/obj/xsim_1.c.
-ERROR: [XSIM 43-3915] Encountered a fatal error. Cannot continue. Exiting... 
+Built simulation snapshot tpg_tb_behav

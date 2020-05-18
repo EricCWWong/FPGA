@@ -66,4 +66,38 @@ begin
         sys_clk_s <= '1';
         wait for 100 ns;        
     end process p_clck;
+    
+    p_test : process is
+    begin
+        rst_s <= '0';
+        wait for 105 ns;
+        rst_s <= '1';
+        tready_s <= '1';
+        wait for 395 ns;
+        
+        wait until falling_edge(sys_clk_s);
+        wait until rising_edge(sys_clk_s);
+        assert (tdata_s = x"000000") report "Wrong colour for this pixel" severity FAILURE;
+        assert (tuser_s = '0') report "TUser should be low" severity FAILURE;
+        assert (tlast_s = '0') report "TLast should be low" severity FAILURE;
+        
+        wait for 8000 ns;
+        
+        wait until rising_edge(sys_clk_s);
+        assert (tdata_s = x"ffffff") report "Wrong colour for this pixel" severity FAILURE;
+        assert (tuser_s = '0') report "TUser should be low" severity FAILURE;
+        assert (tlast_s = '0') report "TLast should be low" severity FAILURE;
+        
+        wait until rising_edge(tlast_s);
+        
+        wait until rising_edge(tuser_s);
+        wait for 10000 ns;
+        tready_s <= '0';
+        wait for 8000 ns;
+        tready_s <= '1';
+        wait for 10000 ns;
+        
+        assert false report "End of simulation" severity FAILURE;
+        
+    end process p_test;
 end Behavioral;

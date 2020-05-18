@@ -2,5 +2,5 @@
 2019.2
 Nov  6 2019
 21:42:20
-/mnt/Data2/FPGA/FPGA/test_pattern_gen/test_pattern_gen.srcs/sim_1/new/tpg_tb.vhd,1588456867,vhdl,,,,tpg_tb,,,,,,,,
-/mnt/Data2/FPGA/FPGA/test_pattern_gen/test_pattern_gen.srcs/sources_1/new/tpg.vhd,1588455972,vhdl,/mnt/Data2/FPGA/FPGA/test_pattern_gen/test_pattern_gen.srcs/sim_1/new/tpg_tb.vhd,,,tpg,,,,,,,,
+/home/eric/Desktop/FPGA/test_pattern_gen/test_pattern_gen.srcs/sim_1/new/tpg_tb.vhd,1589714852,vhdl,,,,tpg_tb,,,,,,,,
+/home/eric/Desktop/FPGA/test_pattern_gen/test_pattern_gen.srcs/sources_1/new/tpg.vhd,1589714532,vhdl,/home/eric/Desktop/FPGA/test_pattern_gen/test_pattern_gen.srcs/sim_1/new/tpg_tb.vhd,,,tpg,,,,,,,,

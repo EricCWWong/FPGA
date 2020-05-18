@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May 17 12:02:54 2020
+# Process ID: 8308
+# Current directory: /home/eric/Desktop/FPGA/test_pattern_gen/test_pattern_gen.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/eric/Desktop/FPGA/test_pattern_gen/test_pattern_gen.sim/sim_1/behav/xsim/xsim.dir/tpg_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/eric/Desktop/FPGA/test_pattern_gen/test_pattern_gen.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/eric/Desktop/FPGA/test_pattern_gen/test_pattern_gen.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/eric/Desktop/FPGA/test_pattern_gen/test_pattern_gen.sim/sim_1/behav/xsim/xsim.dir/tpg_tb_behav/webtalk/xsim_webtalk.tcl -notrace
