@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../test_pattern_gen.srcs/sources_1/new/time_gen.vhd" \
+"../../../../test_pattern_gen.srcs/sim_1/new/time_gen_tb.vhd" \
+
+# Do not sort compile order
+nosort

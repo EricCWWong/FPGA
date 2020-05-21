@@ -1,0 +1,12 @@
+
+{ 
+    crc :  5457058831701911824  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto b99bdc1c0fac4517be70b2f6bf40135d --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot time_gen_tb_behav xil_defaultlib.time_gen_tb" , 
+    buildDate : "Nov  6 2019" , 
+    buildTime : "21:42:20" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/time_gen_tb_behav/xsimk\"   \"xsim.dir/time_gen_tb_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/time_gen_tb_behav/obj/xsim_1.lnx64.o\" -L\"/mnt/Data1/Xilinx/Vivado/2019.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
